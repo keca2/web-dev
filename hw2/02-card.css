@@ -5,10 +5,41 @@ If you would prefer, you can delete them and use your own classes and style decl
   width: 300px;
 }
 
-.img {
-  width: 100%;
+card {
+  min-width: 300px;
+  max-width: 350px;
+  padding:2px 14px;
+  display: grid;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+}
+.cattitle{
+  color: var(--navy)
 }
 
-.btn {
-  width: 100%;
+.catpic {
+  display: block;
+  margin: 0 auto;
+}
+
+.catfax {
+  text-align: left;
+}
+
+.button {
+  font-size: 1.3em;
+  margin-bottom: 5%;
+  min-height: 40px;
+  background-color: var(--navy);
+  border-color: var(--black);
+  border-width: 1px;
+  color: var(--white);
+}
+
+.button:hover{
+  background-color: var(--orange);
+  color: var(--black);
+  border-color: var(--black);
 }

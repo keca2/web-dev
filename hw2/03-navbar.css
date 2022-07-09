@@ -6,11 +6,26 @@ body {
 }
 
 .nav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .list-item {
+  float: left;
+  display: block;
   background-color: var(--green);
+  padding: 25px;
+}
+
+.list-item:hover {
+  background-color: var(--orange);
+  color: var(--black);
+  border-color: var(--black);
 }
 
 .nav-link {
+  color: var(--white);
+  text-decoration: none;
 }
+

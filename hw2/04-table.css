@@ -5,10 +5,25 @@ If you would prefer, you can delete them and use your own classes and style decl
   --lightorange: rgba(255, 165, 0, 0.1);
 }
 
-.table-heading {
-  /* use the custom properties green and white for the colors - these colors are defined in the styles.css file */
+th, td {
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  text-align: center;
 }
 
-.channel {
-  /* use the custom properties orange and black for the colors - these colors are defined in the styles.css file */
+th {
+  background-color: var(--green);
+  border-color: var(--black);
+  border-style: solid;
+  color: var(--white);
+}
+
+tr:hover{
+  background-color: var(--lightorange)
+}
+
+.station {
+  background-color: var(--orange);
+  color: var(--black);
 }
