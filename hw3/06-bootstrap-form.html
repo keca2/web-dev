@@ -13,10 +13,49 @@
     <link rel="stylesheet" href="hw-styles.css" />
   </head>
   <body>
-    <main>
-      <form>
-        <h1>Contact Form</h1>
-      </form>
-    </main>
+      <main class="container">
+        <form class="bg-light border rounded mx-auto p-2">
+            <h1>Contact Form</h1>
+            <div class="formg col-lg-12 col-md-12 col-sm-12">
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" />
+              </div>
+            </div>
+            <div class="formg col-lg-12 col-md-12 col-sm-12">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+            </div>
+            <div class="formg col-lg-12 col-md-12 col-sm-12">
+              <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" class="form-control" id="password" />
+                </div>
+            </div>
+            <fieldset class="form-group1">
+              <legend id="newsletterlabel">Would you like to sign up for the newsletter?</legend>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="Yes" name="newsletter" class="custom-control-input">
+                <label class="custom-control-label" for="Yes">Yes, sign me up</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="No" name="newsletter" class="custom-control-input">
+                <label class="custom-control-label" for="No">No, thank you</label>
+              </div>
+            </fieldset>
+            <div class="formg col-lg-12 col-md-12 col-sm-12">
+              <date class="form-group">
+                <label id="datelabel" for="date">Date:</label>
+                <input id="date" class="form-control" type="date"/>
+              </date>
+            </div>
+            <div class="form-group my-4">
+              <input type="submit" class="btn btn-primary" value="Submit" />
+              <input type="reset" class="btn btn-secondary" value="Reset" />
+            </div>
+          </form>
+        </main>
   </body>
 </html>
