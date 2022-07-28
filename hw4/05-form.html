@@ -5,12 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>05 - Form</title>
-    <script defer src="05-form.js"></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/05-form.css" />
+    <script defer src="./05-form.js"></script>
   </head>
   <body>
-    <main>
-      <form class="form" action="">
-        <h1 class="title">Registration Form</h1>
+    <main class="container mt-4">
+      <form class = "form" action="">
+        <h1 class = "form-title">REGISTRATION FORM</h1>
+          <section class = "form-element">
+            <label id="usernamelabel" for="username">Username:</label>
+            <input id="username" type="text" name="username"/>
+          </section>
+          <br>
+          <section class = "form-element">
+            <label id="emaillabel" for="email">Email:</label>
+            <input id="email" type="email" name="email"/>
+          </section>
+          <br>
+          <section class = "form-element">
+            <label id="passwordlabel" for="password">Password:</label>
+            <input id="password" type="password" name="password"/>
+          </section>
+          <br>
+          <fieldset class = "form-element">
+            <legend id="newsletterlabel">Would you like to sign up for the newsletter?</legend>
+              <input type="radio" name="newsletter" id="Yes">
+              <label for="Yes">Yes, sign me up</label>
+              <br>
+              <input type="radio" name="newsletter" id="No">
+              <label for="No">No, thank you</label>
+          </fieldset>
+          <br>
+          <date class = "form-element">
+            <label id="datelabel" for="date">Date:</label>
+            <input id="date" type="date"/>
+          </date>
+          <br>
+          <br>
+          <div class="btns">
+            <button name="submit" class = "btn-primary" value="Submit">Submit</button>
+            <button name="reset" class = "btn-secondary" value="Reset">Reset</button>
+          </div>
       </form>
     </main>
   </body>

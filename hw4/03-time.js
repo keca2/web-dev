@@ -1,5 +1,20 @@
 const calculateTime = (date1, date2) => {
   // Given two dates, calculate and return the amount of time elapsed in years and months
+  var message = 'Time elapsed: '
+  const d1 = new Date(date1);
+  const d2 = new Date(date2);
+
+  if(isNaN(d1) || isNaN(d2)){
+    message = "Error: Invalid input provided."
+    return message;
+  }
+
+  const years = d1.getFullYear() - d2.getFullYear();
+  var ym = (years != 0 ?  years.toString() + ' years, ' : '')
+  const months = d1.getMonth() - d2.getMonth();
+  var mm = (months != 0 ?  months.toString() + ' months' : '')
+
+  return message.concat(ym, mm);
 };
 
 // Date() formats:
